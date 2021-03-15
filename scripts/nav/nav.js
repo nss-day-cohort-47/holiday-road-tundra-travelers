@@ -4,13 +4,11 @@ const ul = document.querySelector("ul");
 const lineDash = document.querySelector(".line-dash");
 
 
-var dashOrigin = -35; //pixels
-var selectedLi = -35; //pixels
-var speed = 500; //move this many pixels in one second.
-var distance = 0;
-var time = 0;
+const dashOrigin = -35; //pixels
+const selectedLi = -35; 
+const distance = 0;
+const time = 0;
 
-// initial animation and class for HOME
 TweenLite.to(lbs[0], 0.6, {
 					y: -43,
 					ease: Bounce.easeOut,
@@ -19,7 +17,7 @@ TweenLite.to(lbs[0], 0.6, {
 
 lis[0].classList.add("active");
 
-//push all the bottom lines down.
+
 function pushDownLb() {
 	for(let k = 0; k < lbs.length; ++k)
 		TweenLite.to(lbs[k], 0.5, {
@@ -31,8 +29,6 @@ function pushDownLb() {
 ul.addEventListener(
 	"mouseleave",
 	function(e) {
-		// to avoid a bug in chrome that sometimes triggers mouseleave on click
-		// and the relatedTarget comes up null
 		if (e.relatedTarget) {
 			distance = Math.abs(dashOrigin - selectedLi);
 			time = distance / speed;
@@ -43,8 +39,8 @@ ul.addEventListener(
 					strokeDashoffset: selectedLi,
 					ease: Bounce.easeOut
 				});
-			} //if
-		} //if
+			}
+		}
 	},
 	false
 );
@@ -59,7 +55,7 @@ for (let i = 0; i < 4; ++i) {
 				strokeDashoffset: -250 * i - 35,
 				ease: Bounce.easeOut
 			});
-		} //if
+		}
 	});
 
 	lis[i].addEventListener("click", function() {
