@@ -8,5 +8,5 @@ obj
 *.sqlite3
 .vscode
 dist
-Settings.js
+scripts/Settings.js
 db.json
