@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+
 @import "homeimages.css";
+
+@import "nav.css";
+
 @import url("https://fonts.googleapis.com/css?family=Lato");
 /* :root is used to store css variables */
 :root{
@@ -22,6 +27,7 @@ body {
 	padding:0%;
 	margin:0;
 }
+
 
 .header {
 	width: 100%;
@@ -117,9 +123,18 @@ p {
 }
 footer{
 	height: 5%;
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FB9737;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0.2%;
 }
 footer img {
-	float:right;
+	float: right;
 	margin: 0px;
 	height: 100%;
 }
@@ -155,3 +170,4 @@ select {
 .dropSpan {
 	background: var(--gradient) ;
 }
+
