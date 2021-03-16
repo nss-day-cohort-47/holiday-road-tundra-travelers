@@ -14,7 +14,6 @@ export const getWeather = (city) => {
   .then(response => response.json())
   .then(parsedResponse => {
       weatherCollection = parsedResponse.list
-      console.log(parsedResponse.list)
       return parsedResponse.list;
   })
 }

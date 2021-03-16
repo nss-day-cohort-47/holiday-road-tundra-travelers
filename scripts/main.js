@@ -4,8 +4,5 @@ import {sendDropDownToDom} from "./nav/dropDown.js";
 import { getParks } from "./parks/ParkProvider.js";
 import { getWeather } from "./weather/WeatherProvider.js";
 
-getParks()
-getAttractions()
-getEateries()
-getWeather('nashville')
+
 sendDropDownToDom()

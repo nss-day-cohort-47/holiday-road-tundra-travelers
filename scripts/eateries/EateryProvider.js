@@ -13,7 +13,6 @@ export const getEateries = () => {
   .then(response => response.json())
   .then(parsedResponse => {
       eateriesCollection = parsedResponse
-      console.log(parsedResponse)
       return parsedResponse;
   })
 }
