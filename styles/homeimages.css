@@ -22,4 +22,6 @@
     top: 0px;
     left: 0px;
     height: 5%;
+    cursor: pointer;
+    border: solid black 1px;
   }
