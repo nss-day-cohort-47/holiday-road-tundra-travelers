@@ -1,3 +1,191 @@
 {
-	"itineraries": []
+	"itineraries": [
+		{
+			"id": 0,
+			"Bizzareries": [
+				{
+					"name": "",
+					"type": "",
+					"cost": "",
+					"location": "",
+					"webLink": "",
+					"coordinates": [
+						0,
+						0
+					],
+					"daysOfWeek": [
+						{
+							"operating": false,
+							"day": "Sunday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Monday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Tuesday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Wednesday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Thursday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Friday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Saturday",
+							"open": 0,
+							"close": 0
+						}
+					]
+				},
+				{
+					"weather": [
+						{
+							"location": "",
+							"dateTime": 0,
+							"temperature": 0,
+							"atmosphereics": "",
+							"baromoeter": 0,
+							"windSpeed": 0,
+							"direction": ""
+						}
+					]
+				}
+			],
+			"parks": [
+				{
+					"name": "",
+					"type": "",
+					"cost": "",
+					"location": "",
+					"webLink": "",
+					"coordinates": [
+						0,
+						0
+					],
+					"daysOfWeek": [
+						{
+							"operating": false,
+							"day": "Sunday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Monday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Tuesday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Wednesday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Thursday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Friday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Saturday",
+							"open": 0,
+							"close": 0
+						}
+					]
+				}
+			],
+			"eatery": [
+				{
+					"name": "",
+					"type": "",
+					"cost": "",
+					"location": "",
+					"webLink": "",
+					"coordinates": [
+						0,
+						0
+					],
+					"daysOfWeek": [
+						{
+							"operating": false,
+							"day": "Sunday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Monday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Tuesday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Wednesday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Thursday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Friday",
+							"open": 0,
+							"close": 0
+						},
+						{
+							"operating": false,
+							"day": "Saturday",
+							"open": 0,
+							"close": 0
+						}
+					]
+				}
+			]
+		}
+	]
 }
