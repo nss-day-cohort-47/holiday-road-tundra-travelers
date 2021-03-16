@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
 @import "homeimages.css";
 @import url("https://fonts.googleapis.com/css?family=Lato");
-
+/* :root is used to store css variables */
+:root{
+	--gradient: linear-gradient(#233D5F,#dd401e,#FB9737,#DCDCDC) ;
+}
 /*Font to be used for text fields*/
 /* font-family: 'Roboto Condensed', sans-serif; */
 /* font-family: 'Passero One', cursive; */
@@ -123,3 +126,32 @@ footer img {
 
 /* font-family: 'Roboto Condensed', sans-serif; */
 /* font-family: 'Passero One', cursive; */
+option {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#e1, #b1, #d1 {
+	background-color: #233D5F;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#e2, #b2, #d2  {
+	background-color: #dd401e;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#e3, #b3, #d3  {
+	background-color: #FB9737;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#e4, #b4, #d4 {
+	background-color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+select {
+	font-family: 'Passero One', cursive;
+	font-size: 3em;
+	color: #DCDCDC;
+	background: var(--gradient) ;
+	
+}
+.dropSpan {
+	background: var(--gradient) ;
+}
