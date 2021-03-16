@@ -117,9 +117,18 @@ p {
 }
 footer{
 	height: 5%;
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FB9737;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0%;
 }
 footer img {
-	float:right;
+	float: right;
 	margin: 0px;
 	height: 100%;
 }
