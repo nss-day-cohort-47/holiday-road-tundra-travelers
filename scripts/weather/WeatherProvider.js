@@ -10,7 +10,7 @@ export const useWeatherCollection = () => {
 }
 
 export const getWeather = (city) => {
-
+  console.log(city)
   return fetch(`api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${settings.weatherKey}`)
   .then(response => response.json())
   .then(parsedResponse => {
