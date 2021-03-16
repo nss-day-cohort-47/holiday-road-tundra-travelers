@@ -1,7 +1,8 @@
 .pageimage {
     display: flex;
     width: 100%;
-    max-height: 180px;
+    height: 50%;
+    position:relative;
   }
 
 .div_homepgimages{	
@@ -15,4 +16,10 @@
   .img_homepg__link{
     height: 15rem;
     width: auto;
+  }
+  .logo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 5%;
   }

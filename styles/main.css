@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+
 @import "homeimages.css";
+
+@import "nav.css";
+
 @import url("https://fonts.googleapis.com/css?family=Lato");
 /* :root is used to store css variables */
 :root{
@@ -22,6 +27,7 @@ body {
 	padding:0%;
 	margin:0;
 }
+
 
 .header {
 	width: 100%;
@@ -164,3 +170,4 @@ select {
 .dropSpan {
 	background: var(--gradient) ;
 }
+
