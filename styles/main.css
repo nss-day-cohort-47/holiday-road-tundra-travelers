@@ -161,3 +161,7 @@ select {
 	background: var(--gradient) ;
 }
 
+.column {
+	display: flex;
+	align-items: flex-start;
+}
