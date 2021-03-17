@@ -6,6 +6,8 @@
 
 @import "nav.css";
 
+@import "search.css";
+
 @import url("https://fonts.googleapis.com/css?family=Lato");
 /* :root is used to store css variables */
 :root{
@@ -29,16 +31,6 @@ body {
 	background-color: rgb(192, 198, 200);
 }
 
-
-.content {
-	width: 100%;
-	height: calc(100% - 75px);
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
 h1 {
 	letter-spacing: 4px;
 	padding: 1em;
@@ -47,6 +39,7 @@ h1 {
 	opacity: 0.8;
 }
 
+<<<<<<< HEAD
 
 @media (max-device-width: 991px) {
 	.header {
@@ -61,6 +54,8 @@ h1 {
 	}
 }
 
+=======
+>>>>>>> 6cbdbe274ebc970974e2712968d63d51a1f1c72c
 h1 {
     font-family: 'Passero one', cursive;
 }
@@ -111,11 +106,14 @@ select {
 	font-family: 'Passero One', cursive;
 	font-size: 3em;
 	color: #DCDCDC;
-	background: var(--gradient) ;
+	background: transparent ;
 	
 }
-.dropSpan {
+.dropDown {
+  display: flex;
 	background: var(--gradient) ;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .aside {
 	float: right;
