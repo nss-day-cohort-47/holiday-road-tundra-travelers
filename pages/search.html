@@ -1,44 +1,31 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search for Itinerary</title>
+    <title>Saved Itinerary</title>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="icon" type="image/png" href="/images/favicon1.png">
 </head>
 
 <body>
-    <header><img class="pageimage" src="/images/patagonia.jpg" alt="patagoniaImg"><img class="logo" src="/images/Geologo.jpg" alt="Geologo" onclick="openNav()">
-      
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="/index.html">Home</a>
-            <a href="/pages/createnew.html">Create New</a>
-            <a href="/pages/saved.html">Saved</a>
-            <a href="/pages/search.html">Search?</a>
-            <a href="https://www.geocaching.com/play" target="_blank" rel="noopener noreferrer">Start Geocaching!</a>
-
-            
-          </div> 
-</header>
-<main>
-    <body>
-    
-    <h2>Search for things here I guess, give me a better name down the line</h2>
-    <form class="search" action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button value="Submit" class="submit" type="submit" style="color:white;"><i class="fa fa-search"></i></button>
-    </form>
-</main>
+  <header class = "Nav">
+  </header>
+    <div class="dropDown"></div>
+    <main class="content">
+        <h2>Search for things here I guess, give me a better name down the line</h2>
+        <form class="search" action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button value="Submit" class="submit" type="submit" style="color:white;"><i class="fa fa-search"></i></button>
+        </form>
+    </main>
 
 
     <footer><p>&copy; 2021 Tundra Travellers</p>
     </footer>
-    <script type="module" src="/scripts/main.js"></script>
-    <script type="module" src="/scripts/search/search.js"></script>
+    <script type="module" src="../scripts/main.js"></script>
 </body>
 
 </html>
