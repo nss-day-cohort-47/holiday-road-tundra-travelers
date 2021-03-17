@@ -1,25 +1,26 @@
+import { useParksCollection, getParks } from "./ParkProvider.js"
+
 const render = (parkList) => {
     
-  const parkTarget = document.querySelector("#national-park-select")
+  const parkTarget = document.querySelector(".dropDown")
   
   let options = parkList.map(singlePark => {
-      return `<option value="${singlePark.id}">${singlePark.fullName}</option>`
+      return `<option value="${singlePark.id}" id="${singlePark.id}">${singlePark.fullName}</option>`
   }).join("")
   
-  parkTarget.innerHTML = `
+  parkTarget.innerHTML += `
   <select id="national-park__dropdown">
-              <option value="0">Select an Park</option>
-              ${options}
-          </select>`
+  <option value="select" id="desSel" selected> Select a Park</option>
+  ${options}
+  </select>
+  `
 }
 
 
 export const populateParks = () => {
   getParks()
   .then( () => {
-      const parks = useParks()
+      const parks = useParksCollection()
       render(parks)
-  }
-
-  )
+  })
 }
