@@ -89,10 +89,12 @@ select {
 	font-family: 'Passero One', cursive;
 	font-size: 3em;
 	color: #DCDCDC;
-	background: var(--gradient) ;
+	background: transparent ;
 	
 }
-.dropSpan {
+.dropDown {
+  display: flex;
 	background: var(--gradient) ;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
