@@ -47,49 +47,6 @@ h1 {
 	opacity: 0.8;
 }
 
-svg.line-top {
-	width: 100%;
-	background-color: #233D5F;
-}
-svg.line-bottom {
-	width: 100%;
-}
-.menu {
-	width: 750px;
-	margin: 0 auto;
-}
-ul {
-	padding: 0;
-	margin: 0;
-}
-
-ul li {
-	margin: 0;
-	padding: 10px 0 10px 0;
-	width: 25%;
-	height: 10px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: white;
-	cursor: pointer;
-	display: inline-block;
-	letter-spacing: 3.5px;
-	transition: all 0.5s ease-out;
-    font-family: 'Passero one', cursive;
-
-}
-
-li.active {
-	color: #FB9737;/* Change these colors */
-	transform: scale(1.1);
-}
-
-polygon {
-	stroke-width: 2px;
-	stroke: #FB9737;/* Change these colors */
-	fill: #FB9737; /* Change these colors */
-}
 
 @media (max-device-width: 991px) {
 	.header {
@@ -160,8 +117,6 @@ select {
 .dropSpan {
 	background: var(--gradient) ;
 }
-
-.column {
-	display: flex;
-	align-items: flex-start;
+.aside {
+	float: right;
 }
