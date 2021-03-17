@@ -39,7 +39,6 @@ h1 {
 	opacity: 0.8;
 }
 
-<<<<<<< HEAD
 
 @media (max-device-width: 991px) {
 	.header {
@@ -54,8 +53,6 @@ h1 {
 	}
 }
 
-=======
->>>>>>> 6cbdbe274ebc970974e2712968d63d51a1f1c72c
 h1 {
     font-family: 'Passero one', cursive;
 }
