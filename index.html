@@ -36,37 +36,44 @@
     </header>
     <div class="dropDown"></div>
     <main>
-        <div class="iteneraryPreview">
-        <h1>Itenerary Preview</h1>
+        <div class="itineraryPreview">
+        <h1>Itinerary Preview</h1>
         </div>
-        <div>
-        <section class="eatery"><h2>Eatery</h2>
-        
-        </section>
-        <section class="attraction"><h2>Attraction</h2>
-        
-        </section>
-        <section class="park"><h2>Park</h2>
-        
-        </section>
-        <input type="submit" value="Save Itenerary">
-    </div>
-    <div>
-    <section>
         <aside class="aside">
             <div>
                 <section id="weather"><h2>Weather Preview</h2>
-
-
+    
+    
                     </section>
                 </div>
                 <div>
-                    <h2>Saved Iteneraries</h2>
-                    <div id="savedIteneraries">
-
+                    <h2>Saved Itineraries</h2>
+                    <div id="savedItineraries">
+    
                     </div>
                 </div>
             </aside>
+        <div id="itineraryContent">
+        <section id="eatery"><h2>Eatery</h2>
+            <button id="eateryButton">Eatery Details</button>
+            <div class="modal" id="eateryContent">
+                <span class="close">&times;</span>
+                <p>heres some text</p>
+            </div>
+        
+        </section>
+        <section class="attraction"><h2>Attraction</h2>
+            <dialog class="dialog" id="attraction" ></dialog>
+        
+        </section>
+        <section class="park"><h2>Park</h2>
+            <dialog class="dialog" id="park"></dialog>
+        
+        </section>
+        <input type="submit" value="Save Itinerary">
+    </div>
+    <div>
+    <section>
         </section>
     </div>
 </main>
