@@ -6,7 +6,7 @@
       box-sizing: border-box;
     }
     
-    form.example input[type=text] {
+    form.search input[type=text] {
       padding: 10px;
       font-size: 17px;
       border: 1px solid grey;
@@ -15,23 +15,22 @@
       background: #f1f1f1;
     }
     
-    form.example button {
+    .submit {
       float: left;
       width: 20%;
+      height: 2.475em;
       padding: 10px;
-      background: #2196F3;
-      color: white;
+      background:  rgb(80, 25, 45);
       font-size: 17px;
       border: 1px solid grey;
-      border-left: none;
       cursor: pointer;
     }
     
-    form.example button:hover {
-      background: #0b7dda;
+    form.search button:hover {
+      background:  rgb(177, 68, 108);
     }
     
-    form.example::after {
+    form.search::after {
       content: "";
       clear: both;
       display: table;
