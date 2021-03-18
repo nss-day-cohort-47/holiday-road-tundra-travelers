@@ -5,7 +5,7 @@ const render = (parkList) => {
   const parkTarget = document.querySelector(".dropDown")
   
   let options = parkList.map(singlePark => {
-      return `<option value="${singlePark.id}" id="${singlePark.id}">${singlePark.fullName}</option>`
+      return `<option value="${singlePark.id}" id="parkDropdown-${singlePark.id}">${singlePark.fullName}</option>`
   }).join("")
   
   parkTarget.innerHTML += `
