@@ -130,7 +130,7 @@ select {
 	background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
   }
   /* Modal Content */
-  #eateryContent {
+  #eateryContent, #saveTrip {
 	background-color: #fefefe;
 	margin: auto;
 	padding: 20px;

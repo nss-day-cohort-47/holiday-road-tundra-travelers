@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,53 +12,77 @@
 </head>
 
 <body>
-    <header class = "Nav">
+    <header class="Nav">
     </header>
     <div class="dropDown"></div>
     <main>
         <div class="itineraryPreview">
-        <h1>Itinerary Preview</h1>
+            <h1>Itinerary Preview</h1>
         </div>
         <aside class="aside">
             <div>
-                <section id="weather"><h2>Weather Preview</h2>
-    
-    
-                    </section>
-                </div>
-                <div>
-                    <h2>Saved Itineraries</h2>
-                    <div id="savedItineraries">
-    
-                    </div>
-                </div>
-            </aside>
-        <div id="itineraryContent">
-        <section id="eatery"><h2>Eatery</h2>
-            <button id="eateryButton">Eatery Details</button>
-            <div class="modal" id="eateryContent">
-                <span id="closeid" class="close">&times;</span>
-                <p>heres some text</p>
-            </div>
-        
-        </section>
-        <section class="attraction"><h2>Attraction</h2>
-            <dialog class="dialog" id="attraction" ></dialog>
-        
-        </section>
-        <section class="park"><h2>Park</h2>
-            <dialog class="dialog" id="park"></dialog>
-        
-        </section>
-        <input type="submit" value="Save Itinerary" id="itinSaveButton">
-    </div>
-    <div>
-    <section>
-        </section>
-    </div>
-</main>
+                <section id="weather">
+                    <h2>Weather Preview</h2>
 
-    <footer><p>&copy; 2021 Tundra Travellers</p></footer>
+
+                </section>
+            </div>
+            <div>
+                <h2>Saved Itineraries</h2>
+                <div id="savedItineraries">
+
+                </div>
+            </div>
+        </aside>
+        <div id="itineraryContent">
+            <section id="eatery">
+                <h2>Eatery</h2>
+                <button id="eateryButton">Eatery Details</button>
+                <div class="modal" id="eateryContent">
+                    <span id="closeid" class="close">&times;</span>
+                    <p>heres some text</p>
+                </div>
+
+            </section>
+            <section class="attraction">
+                <h2>Attraction</h2>
+                <dialog class="dialog" id="attraction"></dialog>
+
+            </section>
+            <section class="park">
+                <h2>Park</h2>
+                <dialog class="dialog" id="park"></dialog>
+
+            </section>
+            <!-- First Save -->
+            <input type="submit" value="Save Itinerary" id="itinSaveButton">
+            <div id="saveTrip" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" id="saveCloseId">&times;</span>
+                    <form action="" name="itinForm">
+                        <fieldset>
+                            <label for="concepts covered"> Name The Trip </label>
+                            <input type="text" name="itinerary" id="finalSaveId">
+                        </fieldset>
+                    </form>
+                    <!-- Save in Modal -->
+                    <button type="submit" id="SaveMe">Save</button>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 Tundra Travellers</p>
+    </footer>
     <script type="module" src="./scripts/main.js"></script>
-  </body>
+</body>
+
 </html>
