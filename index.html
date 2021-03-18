@@ -14,14 +14,48 @@
     <header class = "Nav">
     </header>
     <div class="dropDown"></div>
-    <main class="content">
-      <h1>Put Text here</h1>
-      <p>wouldn't hurt to put more text here</p>
-    </main>
-    <aside>
-      <h2>Put some text here too</h2>
-      <p>fill me out please</p>
-    </aside>
+    <main>
+        <div class="itineraryPreview">
+        <h1>Itinerary Preview</h1>
+        </div>
+        <aside class="aside">
+            <div>
+                <section id="weather"><h2>Weather Preview</h2>
+    
+    
+                    </section>
+                </div>
+                <div>
+                    <h2>Saved Itineraries</h2>
+                    <div id="savedItineraries">
+    
+                    </div>
+                </div>
+            </aside>
+        <div id="itineraryContent">
+        <section id="eatery"><h2>Eatery</h2>
+            <button id="eateryButton">Eatery Details</button>
+            <div class="modal" id="eateryContent">
+                <span id="closeid" class="close">&times;</span>
+                <p>heres some text</p>
+            </div>
+        
+        </section>
+        <section class="attraction"><h2>Attraction</h2>
+            <dialog class="dialog" id="attraction" ></dialog>
+        
+        </section>
+        <section class="park"><h2>Park</h2>
+            <dialog class="dialog" id="park"></dialog>
+        
+        </section>
+        <input type="submit" value="Save Itinerary">
+    </div>
+    <div>
+    <section>
+        </section>
+    </div>
+</main>
 
     <footer><p>&copy; 2021 Tundra Travellers</p></footer>
     <script type="module" src="./scripts/main.js"></script>
