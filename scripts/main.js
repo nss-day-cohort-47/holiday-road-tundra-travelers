@@ -11,18 +11,50 @@ useDb();
 
 
 
-
-const modal = document.getElementById("eateryContent")
-const button = document.getElementById("eateryButton")
-const span = document.getElementById("closeid")
-button.onclick = () => {
-    modal.style.display = "block"
+/* Eatery Detail Button */
+const modalEatery = document.getElementById("eateryContent")
+const buttonEatery = document.getElementById("eateryButton")
+const spanEatery = document.getElementById("eateryCloseid")
+buttonEatery.onclick = () => {
+    modalEatery.style.display = "block"
 }
 window.onclick = event => {
-    if(event.target === modal) {
-        modal.style.display = "none"
+    if(event.target === modalEatery) {
+        modalEatery.style.display = "none"
     }
 }
-span.onclick = () => {
-    modal.style.display="none"
+spanEatery.onclick = () => {
+    modalEatery.style.display="none"
 }
+
+const modalAttractions = document.getElementById("attractionContent")
+const buttonAttractions = document.getElementById("attractionButton")
+const spanAttractions = document.getElementById("attractionCloseid")
+buttonAttractions.onclick = () => {
+    modalAttractions.style.display = "block"
+}
+window.onclick = event => {
+    if(event.target === modalAttractions) {
+        modalAttractions.style.display = "none"
+    }
+}
+spanAttractions.onclick = () => {
+    modalAttractions.style.display="none"
+}
+
+const modalPark = document.getElementById("parkContent")
+const buttonPark = document.getElementById("parkButton")
+const spanPark = document.getElementById("parkCloseid")
+buttonPark.onclick = () => {
+    modalPark.style.display = "block"
+}
+window.onclick = event => {
+    if(event.target === modalPark) {
+        modalPark.style.display = "none"
+    }
+}
+spanPark.onclick = () => {
+    modalPark.style.display="none"
+}
+
+
