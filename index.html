@@ -2,60 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake's Itinerary</title>
 
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="icon" type="image/png" href="images/favicon1.png">
-</head>
+  </head>
 
-<body>
-    <header class = "Nav">
-    </header>
+  <body>
+    <header class="Nav"></header>
     <div class="dropDown"></div>
     <main>
-        <div class="itineraryPreview">
+      <div class="itineraryPreview">
         <h1>Itinerary Preview</h1>
+      </div>
+
+      <aside class="aside">
+        <div>
+          <section id="weather"><h2>Weather Preview</h2></section>
         </div>
-        <aside class="aside">
-            <div>
-                <section id="weather"><h2>Weather Preview</h2>
-    
-    
-                    </section>
-                </div>
-                <div>
-                    <h2>Saved Itineraries</h2>
-                    <div id="savedItineraries">
-    
-                    </div>
-                </div>
-            </aside>
-        <div id="itineraryContent">
-        <section id="eatery"><h2>Eatery</h2>
-            <button id="eateryButton">Eatery Details</button>
-            <div class="modal" id="eateryContent">
-                <span id="closeid" class="close">&times;</span>
-                <p>heres some text</p>
-            </div>
-        
+        <div>
+          <h2>Saved Itineraries</h2>
+          <div id="savedItineraries"></div>
+        </div>
+      </aside>
+
+      <div id="itineraryContent">
+        <section id="eatery">
+          <h2>Eatery</h2>
+          <button id="eateryButton">Eatery Details</button>
+          <div class="modal" id="eateryContent">
+            <span id="closeid" class="close">&times;</span>
+            <p>heres some text</p>
+          </div>
         </section>
-        <section class="attraction"><h2>Attraction</h2>
-            <dialog class="dialog" id="attraction" ></dialog>
-        
+        <section class="attraction">
+          <h2>Attraction</h2>
+          <dialog class="dialog" id="attraction"></dialog>
         </section>
-        <section class="park"><h2>Park</h2>
-            <dialog class="dialog" id="park"></dialog>
-        
+        <section class="park">
+          <h2>Park</h2>
+          <dialog class="dialog" id="park"></dialog>
         </section>
-        <input type="submit" value="Save Itinerary">
-    </div>
-    <div>
-    <section>
-        </section>
-    </div>
-</main>
+        <input type="submit" value="Save Itinerary" />
+      </div>
+
+      <div>
+        <section></section>
+      </div>
+    </main>
 
     <footer><p>&copy; 2021 Tundra Travellers</p></footer>
     <script type="module" src="./scripts/main.js"></script>
