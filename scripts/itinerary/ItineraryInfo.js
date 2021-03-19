@@ -5,17 +5,28 @@ import { getWeather, useWeatherCollection } from "../weather/WeatherProvider.js"
 
 const modalDom = document.querySelector('body')
 modalDom.addEventListener('click', (event) => {
-  let modal = document.querySelector(".modal")
+  let attractionModal = document.querySelector("#attractionContent")
+  let eateryModal = document.querySelector("#eateryContent")
+  let parkModal = document.querySelector("#parkContent")
+
   if(event.target.id === 'eateryButton') {
-    debugger
-    console.log('hi')
-    modal.style.display = "block";
+    eateryModal.style.display = "block";
   } else if(event.target.id === 'closeEatery') {
-    modal.style.display = "none";
-  } else if(event.target == modal) {
-    modal.style.display = "none";
-  } else {
-    console.log(event);
+    eateryModal.style.display = "none";
+  } else if(event.target == eateryModal) {
+    eateryModal.style.display = "none";
+  } else if(event.target.id === 'attractionButton') {
+    attractionModal.style.display = "block";
+  } else if(event.target.id === 'closeAttraction') {
+    attractionModal.style.display = "none";
+  } else if(event.target == attractionModal) {
+    attractionModal.style.display = "none";
+  } else if(event.target.id === 'parkButton') {
+    parkModal.style.display = "block";
+  } else if(event.target.id === 'closePark') {
+    parkModal.style.display = "none";
+  } else if(event.target == parkModal) {
+    parkModal.style.display = "none";
   }
 })
 
@@ -36,11 +47,17 @@ itineraryDom.addEventListener('change', (event) => {
         <li>Description: ${weatherCollection[0].weather[0].description}</li>`
       })
       const addParkToDom = document.querySelector('.park')
-      addParkToDom.innerHTML += `
+      addParkToDom.innerHTML = `
+      <h2>Parks</h2>
       <li>Name: ${park.fullName}</li>
       <li>Cost: $${park.entranceFees[0].cost}</li>
       <li>Location: ${park.addresses[0].city}, ${park.addresses[0].stateCode}</li>
-      <button>Pie</button>
+      <button type='submit' id='parkButton'>Park Details</button>
+      <div id="parkContent" class="modal">
+        <span id="closePark" class="close">&times;</span>
+        <p>${park.url}</p>
+        <p>${park.description}</p>
+      </div>
       `
     })
   } else if(event.target.id === 'eatery__dropdown') {
@@ -49,10 +66,9 @@ itineraryDom.addEventListener('change', (event) => {
       const eatery = useEateriesCollection().find(eateryObj => eateryObj.id == event.target.value)
       const addEateryToDom = document.querySelector('.eatery')
       addEateryToDom.innerHTML = `
-      <ul>
+      <h2>Eatery</h2>
       <li>Name: ${eatery.businessName}</li>
       <li>Location: ${eatery.city}, ${eatery.state}</li>
-      </ul>
       <button type='submit' id='eateryButton'>Eatery Details</button>
       <div id="eateryContent" class="modal">
         <span id="closeEatery" class="close">&times;</span>
@@ -65,9 +81,15 @@ itineraryDom.addEventListener('change', (event) => {
     .then( () => {
       const attraction = useAttractionCollection().find(attractionObj => attractionObj.id == event.target.value)
       const addAttractionToDom = document.querySelector('.attraction')
-      addAttractionToDom.innerHTML += `
+      addAttractionToDom.innerHTML = `
+      <h2>Attraction</h2>
       <li>Name: ${attraction.name}</li>
       <li>Location: ${attraction.city}, ${attraction.state}</li>
+      <button type='submit' id='attractionButton'>Attraction Details</button>
+      <div id="attractionContent" class="modal">
+        <span id="closeattraction" class="close">&times;</span>
+        <p>${attraction.description}</p>
+      </div>
       `
     })
   }
