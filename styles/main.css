@@ -155,3 +155,7 @@ select {
 	text-decoration: none;
 	cursor: pointer;
   }
+#savedItineraries{
+	display: flex;
+	flex-direction: column;
+}
