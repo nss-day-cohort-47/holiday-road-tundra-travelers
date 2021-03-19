@@ -41,6 +41,12 @@ body {
 	transition: margin-left .5s;
 	padding: 16px;
   }
+  .footer {
+	position: absolute;
+	bottom: 0%;
+	color: #818181;
+	padding-left: 1em;
+}
   
   @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}

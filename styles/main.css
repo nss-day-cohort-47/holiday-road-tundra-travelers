@@ -11,7 +11,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 /* :root is used to store css variables */
 :root{
-	--gradient: linear-gradient(#233D5F,#dd401e,#FB9737,#DCDCDC) ;
+	--gradient: linear-gradient(90deg, rgba(35,61,95,1) 0%,rgba(136,136,136,1) 100%);
 }
 /*Font to be used for text fields*/
 /* font-family: 'Roboto Condensed', sans-serif; */
@@ -35,8 +35,12 @@ h1 {
 	letter-spacing: 4px;
 	padding: 1em;
 	color: white;
-	background-color: #233D5F;
+	background: #233D5F;
 	opacity: 0.8;
+	font-family: 'Teko', sans-serif;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	background: linear-gradient(90deg, rgba(35,61,95,1) 10%,rgba(136,136,136,1) 90%);
 }
 
 
@@ -52,32 +56,10 @@ h1 {
 		height: calc(100% - 64px);
 	}
 }
-
-h1 {
-    font-family: 'Passero one', cursive;
-}
 p {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2em;
 }
-footer{
-	height: 5%;
-	position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #FB9737;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 0.2%;
-}
-footer img {
-	float: right;
-	margin: 0px;
-	height: 100%;
-}
-
 /* font-family: 'Roboto Condensed', sans-serif; */
 /* font-family: 'Passero One', cursive; */
 option {
@@ -139,7 +121,7 @@ select {
 	max-height: 20%;
 	position: fixed;
 	left: 9%;
-	margin-top: 30em;
+	margin-top: 20em;
 	
   }
   /* The Close Button */
@@ -155,3 +137,42 @@ select {
 	text-decoration: none;
 	cursor: pointer;
   }
+  #itineraryContent {
+	  float:left;
+	  width: 50%;
+	  background-color: #233D5F;
+	  margin-left: 0em;
+	  border: solid, black, 40px;
+	  height: 100em;
+  }
+  #itineraryContent > * {
+	color: ivory;
+	font-size: large;
+}
+.aside{
+	float:right;
+	  width: 50em;
+	  margin-right: 5em;
+	  border: solid, black, 40px;
+	  height: 30em;
+	  margin-top: 0%;
+}
+.aside > * {
+	color: ivory;
+	font-size: large;
+	width: 50%;
+}
+#itinSaveButton {
+	background-color:#FB9737;
+}
+#itinSaveButton:hover {
+box-shadow: 0 15px 19px 0 rgba(0,0,0,0.24);
+background-color: #dd401e;
+}
+/*someone else is going to have to figure it out but we need to disable the button when we don't have all 3 items in it, and I want to use cursor: not-allowed; to show it. Capiche?*/
+#finalSaveId {
+	width: 100%;
+	margin-bottom: 1.5em;
+	padding:0px;
+	height: 2em;
+}
