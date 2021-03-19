@@ -10,4 +10,4 @@ export const getWeatherObj = () => {
     weather.windSpeed = 4  
     weather.direction = "South"
     return weather
-}
+} 

@@ -112,7 +112,7 @@ select {
 	background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
   }
   /* Modal Content */
-  #eateryContent {
+  #eateryContent, #saveTrip {
 	background-color: #fefefe;
 	margin: auto;
 	padding: 20px;
@@ -121,7 +121,7 @@ select {
 	max-height: 20%;
 	position: fixed;
 	left: 9%;
-	margin-top: 30em;
+	margin-top: 20em;
 	
   }
   /* The Close Button */
@@ -162,5 +162,17 @@ select {
 	font-size: large;
 	width: 50%;
 }
-
-
+#itinSaveButton {
+	background-color:#FB9737;
+}
+#itinSaveButton:hover {
+box-shadow: 0 15px 19px 0 rgba(0,0,0,0.24);
+background-color: #dd401e;
+}
+/*someone else is going to have to figure it out but we need to disable the button when we don't have all 3 items in it, and I want to use cursor: not-allowed; to show it. Capiche?*/
+#finalSaveId {
+	width: 100%;
+	margin-bottom: 1.5em;
+	padding:0px;
+	height: 2em;
+}
