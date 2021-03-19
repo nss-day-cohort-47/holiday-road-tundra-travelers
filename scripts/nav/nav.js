@@ -8,7 +8,10 @@ const makeNav = () => {
               <a href="/pages/saved.html">Saved</a>
               <a href="/pages/search.html">Search?</a>
               <a href="https://www.geocaching.com/play" target="_blank" rel="noopener noreferrer">Start Geocaching!</a>
+              <p class ="footer">&copy; 2021 Tundra Travellers</p>
             </div>`
+            
+            
     }
     export const SendNavToDom = () => {
         const navDom = document.querySelector(".Nav");
