@@ -60,19 +60,6 @@ p {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2em;
 }
-footer{
-	height: 5%;
-	position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #FB9737;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 0.2%;
-}
-
 /* font-family: 'Roboto Condensed', sans-serif; */
 /* font-family: 'Passero One', cursive; */
 option {
@@ -106,7 +93,6 @@ select {
 	background: var(--gradient) ;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
 .aside {
 	float: right;
@@ -174,5 +160,7 @@ select {
 .aside > * {
 	color: ivory;
 	font-size: large;
+	width: 50%;
 }
+
 
