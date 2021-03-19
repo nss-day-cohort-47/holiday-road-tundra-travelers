@@ -5,7 +5,6 @@ import { openNav } from "./nav/nav.js";
 import { closeNav } from "./nav/nav.js";
 import { saveButton } from "./save/writeToDb.js";
 import {useTripArray} from "./SavedTrips/trips.js";
-import {sendTripsToDom} from "./SavedTrips/tripsToDom.js";
 import './itinerary/ItineraryInfo.js';
 
 sendDropDownToDom()
