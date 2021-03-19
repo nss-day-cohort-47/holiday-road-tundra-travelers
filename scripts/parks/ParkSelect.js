@@ -3,9 +3,10 @@ import { useParksCollection, getParks } from "./ParkProvider.js"
 const render = (parkList) => {
     
   const parkTarget = document.querySelector(".dropDown")
-  
+  let parkFullName = []
   let options = parkList.map(singlePark => {
-      return `<option value="${singlePark.id}" id="parkDropdown-${singlePark.id}">${singlePark.fullName}</option>`
+    parkFullName = singlePark.fullName 
+      return `<option value="${singlePark.id}" id="parkDropdown-${singlePark.fullName}">${singlePark.fullName}</option>`
   }).join("")
   
   parkTarget.innerHTML += `
@@ -15,6 +16,7 @@ const render = (parkList) => {
   </select>
   `
 }
+
 
 
 export const populateParks = () => {
