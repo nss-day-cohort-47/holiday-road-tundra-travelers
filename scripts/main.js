@@ -4,13 +4,14 @@ import { SendNavToDom } from "./nav/nav.js";
 import { openNav } from "./nav/nav.js";
 import { closeNav } from "./nav/nav.js";
 import { saveButton } from "./save/writeToDb.js";
-import './itinerary/ItineraryInfo.js'
+import {useTripArray} from "./SavedTrips/trips.js";
+import './itinerary/ItineraryInfo.js';
 
 sendDropDownToDom()
 SendNavToDom()
 openNav()
 closeNav()
-
+useTripArray()
 const modal = document.getElementById("eateryContent")
 const button = document.getElementById("eateryButton")
 const span = document.getElementById("closeid")
