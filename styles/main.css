@@ -128,9 +128,10 @@ select {
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
-  }
-  /* Modal Content */
-  #eateryContent {
+}
+/* Modal Content */
+#eateryContent {
+  display: none; /* Hidden by default */
 	background-color: #fefefe;
 	margin: auto;
 	padding: 20px;
