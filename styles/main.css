@@ -188,6 +188,10 @@ select {
 	text-decoration: none;
 	cursor: pointer;
   }
+#savedItineraries{
+	display: flex;
+	flex-direction: column;
+}
   #itineraryContent {
 	  float:left;
 	  width: 50%;
