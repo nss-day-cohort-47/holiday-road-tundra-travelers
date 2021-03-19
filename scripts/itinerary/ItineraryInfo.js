@@ -87,7 +87,7 @@ itineraryDom.addEventListener('change', (event) => {
       <li>Location: ${attraction.city}, ${attraction.state}</li>
       <button type='submit' id='attractionButton'>Attraction Details</button>
       <div id="attractionContent" class="modal">
-        <span id="closeattraction" class="close">&times;</span>
+        <span id="closeAttraction" class="close">&times;</span>
         <p>${attraction.description}</p>
       </div>
       `
