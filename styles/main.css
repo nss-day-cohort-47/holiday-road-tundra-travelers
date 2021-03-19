@@ -11,7 +11,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 /* :root is used to store css variables */
 :root{
-	--gradient: radial-gradient(circle, rgba(35,61,95,1) 0%,rgba(136,136,136,1), rgba(192, 198, 200,1) 100%);
+	--gradient: linear-gradient(90deg, rgba(35,61,95,1) 0%,rgba(136,136,136,1) 100%);
 }
 /*Font to be used for text fields*/
 /* font-family: 'Roboto Condensed', sans-serif; */
@@ -39,7 +39,8 @@ h1 {
 	opacity: 0.8;
 	font-family: 'Teko', sans-serif;
 	margin-top: 0em;
-	background: radial-gradient(circle, rgba(35,61,95,1) 0%,rgba(136,136,136,1), rgba(192, 198, 200,1) 100%);
+	margin-bottom: 0em;
+	background: linear-gradient(90deg, rgba(35,61,95,1) 10%,rgba(136,136,136,1) 90%);
 }
 
 
@@ -152,12 +153,26 @@ select {
   }
   #itineraryContent {
 	  float:left;
-	  width: 50em;
-	  background-color: rgb(80, 25, 45);
-	  margin-left: 5em;
+	  width: 50%;
+	  background-color: #233D5F;
+	  margin-left: 0em;
 	  border: solid, black, 40px;
+	  height: 100em;
   }
   #itineraryContent > * {
 	color: ivory;
 	font-size: large;
 }
+.aside{
+	float:right;
+	  width: 50em;
+	  margin-right: 5em;
+	  border: solid, black, 40px;
+	  height: 30em;
+	  margin-top: 0%;
+}
+.aside > * {
+	color: ivory;
+	font-size: large;
+}
+
