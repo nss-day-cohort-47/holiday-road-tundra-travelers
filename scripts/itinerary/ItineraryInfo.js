@@ -101,7 +101,7 @@ itineraryDom.addEventListener('change', (event) => {
       </div>
       `
       itinerarySaveObject.attraction.name = attraction.name;
-      itinerarySaveObject.attraction.location = attraction.city + ", " + attraction.stateCode;
+      itinerarySaveObject.attraction.location = attraction.city + ", " + attraction.state;
     })
   }
 })
