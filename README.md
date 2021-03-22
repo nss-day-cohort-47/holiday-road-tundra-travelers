@@ -1,3 +1,37 @@
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## General info
+A group Project worked on by Jeremiah Schugt, Nick Patton, Traye Johnson, Carter Culkin. We set out to develop a travel itinerary website for a chosen persona given to us by Nashville software school. We had to include dropdown menus, a weather API, a national Parks API, an Attractions API, and an Eateries API. The last two API's were given to us by Nashville Software School Directly. Our main goal was to better educate ourselves with Javascript and intigrating APIs into dynamically changing webpages. We also set out to help our co-classmates learn and grow in areas that might not be their strongsuits.
+	
+## Resources
+Project was created with:
+* http://holidayroad.nss.team/eateries
+* http://holidayroad.nss.team/bizarreries
+* https://openweathermap.org/api
+* https://developer.nps.gov/api/v1/parks?api_key=your_api_key
+* Javascript
+* CSS
+* HTML
+* Visual Studio Code
+* NPM Json servers
+* Postman
+
+## Setup
+To run this project, make a copy from our shared github repository ("https://github.com/nss-day-cohort-47/holiday-road-tundra-travelers"), then in a terminal type out:
+
+cd/workspace/holiday-road-tundra-travelers
+in one terminal tab serve it to have the HTML to distplay
+in another tab
+cd/workspace/holiday-road-tundra-travelers/api/
+launch a json server using json-server -p 8088 db.json
+
+
+
+# Below were the instructions given to us by Nashville software school
+
 # Holiday Road from Nashville
 
 You and your teammates have been contracted by the National Parks Service to build an application that will allow people to build itineraries for their trips to the beautiful national parks that they maintain. The starting point of each trip will be Nashville, TN, but the destination will a national park selected by the user.
