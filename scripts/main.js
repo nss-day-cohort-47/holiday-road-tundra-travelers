@@ -11,7 +11,8 @@ sendDropDownToDom()
 SendNavToDom()
 openNav()
 closeNav()
-
+useTripArray()
+getTripData()
 const saveButtonId = document.getElementById("itinSaveButton");
 const saveModal = document.getElementById("saveTrip")
 const finalSave = document.getElementById("finalSaveId")
@@ -31,14 +32,12 @@ const saveTripValidation = () => {
 
 }
 saveMeId.addEventListener("click", event => {
-    event.preventDefault()
     saveTripValidation();
 
 })
 
 finalSave.addEventListener("keydown", event => {
     if (event.key === 'Enter') {
-        event.preventDefault()
         saveTripValidation()
 
     }
