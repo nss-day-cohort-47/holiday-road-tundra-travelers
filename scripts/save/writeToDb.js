@@ -1,3 +1,4 @@
+import { getTripData } from "../SavedTrips/trips.js";
 import { getAttractionObject } from "./attractionToJson.js";
 import { getEateryObject } from "./eateryToJson.js";
 import { useDb } from "./getDataFromDom.js";
@@ -15,8 +16,11 @@ export const saveButton = (saveName) => {
         parks: getParksObject(),
         weather: getWeatherObj()
     }
-
-    if (saveName !== "") {
-        useDb(itinObject);
+    try {
+        if (saveName !== "") {
+            useDb(itinObject);
+        }
+    } finally {
+        getTripData()
     }
 }
