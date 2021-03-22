@@ -3,8 +3,7 @@ let tripArray = []
 
 const savedRep = document.getElementById("savedItineraries")
 export const getTripData = () => {
-    console.log("in get trip data")
-    return fetch("http://localhost:8088/itineraries")
+        return fetch("http://localhost:8088/itineraries")
         .then(response => response.json())
         .then(parsedResposne => {
             tripArray = parsedResposne
@@ -15,7 +14,6 @@ export const getTripData = () => {
                 savedAttraction += `<button type="submit" id="reserve${y.tripName}">${y.tripName}</button>`
 
             }
-            console.log("Just about to leave")
             savedRep.innerHTML = savedAttraction;
         })
 }
@@ -31,10 +29,11 @@ const populateDomWithSavedData = (value, tagId) =>
     <div id="savedTripInfo">
     <h4>${value.tripName}</h4>
     <h4>Park Name: ${value.parks.name}</h4>
-    <h4>Cost: $${value.parks.cost}</h4>
+    <h4>Location: ${value.parks.location}</h4>
     <h4>Attraction: ${value.attraction.name}</h4>
-    <h4>Cost: ${value.attraction.cost}</h4>
+    <h4>Location: ${value.attraction.location}</h4>
     <h4>Eatery: ${value.eatery.name}</h4>
+    <div>Click "here" to return</div>
     </div>
     `
 }

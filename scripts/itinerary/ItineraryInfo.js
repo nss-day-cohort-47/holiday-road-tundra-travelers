@@ -2,7 +2,12 @@ import { getAttractions, useAttractionCollection } from "../attractions/Attracti
 import { getEateries, useEateriesCollection } from "../eateries/EateryProvider.js";
 import { useParksCollection, getParks } from "../parks/ParkProvider.js";
 import { getWeather, useWeatherCollection } from "../weather/WeatherProvider.js";
-
+const itinerarySaveObject = {
+  eatery:{},
+  parks:{},
+  attraction:{},
+  weather:{}
+}
 const modalDom = document.querySelector('body')
 modalDom.addEventListener('click', (event) => {
   let attractionModal = document.querySelector("#attractionContent")
@@ -54,17 +59,21 @@ itineraryDom.addEventListener('change', (event) => {
       <li>Location: ${park.addresses[0].city}, ${park.addresses[0].stateCode}</li>
       <button type='submit' id='parkButton'>Park Details</button>
       <div id="parkContent" class="modal">
-        <span id="closePark" class="close">&times;</span>
-        <p>${park.url}</p>
-        <p>${park.description}</p>
+      <span id="closePark" class="close">&times;</span>
+      <p>${park.url}</p>
+      <p>${park.description}</p>
       </div>
       `
+      itinerarySaveObject.parks.name = park.fullName;
+      itinerarySaveObject.parks.location = park.addresses[0].city + ", " + park.addresses[0].stateCode;
     })
   } else if(event.target.id === 'eatery__dropdown') {
     getEateries()
     .then( () => {
       const eatery = useEateriesCollection().find(eateryObj => eateryObj.id == event.target.value)
       const addEateryToDom = document.querySelector('.eatery')
+      itinerarySaveObject.eatery.name = eatery.businessName;
+      itinerarySaveObject.eatery.location = eatery.city +", "+ eatery.state;
       addEateryToDom.innerHTML = `
       <h2>Eatery</h2>
       <li>Name: ${eatery.businessName}</li>
@@ -91,6 +100,13 @@ itineraryDom.addEventListener('change', (event) => {
         <p>${attraction.description}</p>
       </div>
       `
+      itinerarySaveObject.attraction.name = attraction.name;
+      itinerarySaveObject.attraction.location = attraction.city + ", " + attraction.state;
     })
   }
 })
+
+
+export const getItiniSaveOBject = () => {
+  return itinerarySaveObject;
+}
