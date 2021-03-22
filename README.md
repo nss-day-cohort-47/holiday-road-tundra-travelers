@@ -1,3 +1,8 @@
+## Linkedin links to each teammate
+* https://www.linkedin.com/in/carteralculkin/
+* https://www.linkedin.com/in/nspatton/
+* https://www.linkedin.com/in/jeremiah-schugt/
+* https://www.linkedin.com/in/traye-johnson/
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
